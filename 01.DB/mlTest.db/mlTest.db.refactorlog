@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="e0c26681-45e0-4b04-90b5-7d9133fc80c3" ChangeDateTime="04/29/2019 06:51:42">
+    <Property Name="ElementName" Value="[dbo].[ML].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ML]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Idx" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="383ea543-719d-4c7d-866d-735457102b55" ChangeDateTime="04/29/2019 06:53:20">
+    <Property Name="ElementName" Value="[dbo].[ML].[Idx]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ML]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IDX" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="32d17ef1-dc71-4220-bd92-7149ffd83573" ChangeDateTime="04/29/2019 06:54:37">
+    <Property Name="ElementName" Value="[dbo].[ML].[REG_DT]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ML]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RDT" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="842d383b-cbc4-4eda-81bf-fa77b7b5a345" ChangeDateTime="04/29/2019 06:54:50">
+    <Property Name="ElementName" Value="[dbo].[ML].[RDT]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ML]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="REG_DT" />
+  </Operation>
+</Operations>

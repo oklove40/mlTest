@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="mlTest.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="mlTestStoreContainer">
+    <EntitySet Name="MLSet" EntityType="mlTest.Store.MLSet" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="MLSet">
+    <Key>
+      <PropertyRef Name="IDX" />
+    </Key>
+    <Property Name="IDX" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TITLE" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="CONTENT" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="REG_DT" Type="datetime" Nullable="true" />
+    <Property Name="EDT_DT" Type="datetime" Nullable="true" />
+    <Property Name="REG_NM" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="EDT_NM" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="mlTest" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="mlTestContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="MLSet" EntityType="mlTest.ML" />
+        </EntityContainer>
+        <EntityType Name="ML">
+          <Key>
+            <PropertyRef Name="IDX" />
+          </Key>
+          <Property Name="IDX" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TITLE" Type="String" Nullable="true" >
+            <Documentation>
+              <LongDescription>제목</LongDescription>
+            </Documentation>
+          </Property>
+          <Property Name="CONTENT" Type="String" Nullable="true" >
+            <Documentation>
+              <LongDescription>내용</LongDescription>
+            </Documentation>
+          </Property>
+          <Property Name="REG_DT" Type="DateTime" Nullable="true" >
+            <Documentation>
+              <LongDescription>등록일</LongDescription>
+            </Documentation>
+          </Property>
+          <Property Name="EDT_DT" Type="DateTime" Nullable="true" >
+            <Documentation>
+              <LongDescription>수정일</LongDescription>
+            </Documentation>
+          </Property>
+          <Property Name="REG_NM" Type="String" Nullable="true" />
+          <Property Name="EDT_NM" Type="String" Nullable="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="mlTestStoreContainer" CdmEntityContainer="mlTestContainer">
+    <EntitySetMapping Name="MLSet">
+      <EntityTypeMapping TypeName="IsTypeOf(mlTest.ML)">
+        <MappingFragment StoreEntitySet="MLSet">
+          <ScalarProperty Name="IDX" ColumnName="IDX" />
+          <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+          <ScalarProperty Name="CONTENT" ColumnName="CONTENT" />
+          <ScalarProperty Name="REG_DT" ColumnName="REG_DT" />
+          <ScalarProperty Name="EDT_DT" ColumnName="EDT_DT" />
+          <ScalarProperty Name="REG_NM" ColumnName="REG_NM" />
+          <ScalarProperty Name="EDT_NM" ColumnName="EDT_NM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="없음" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
