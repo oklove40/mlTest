@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Test", "03.Test", "{2E93
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mlTest.Test.View", "03.Test\mlTest.Test.View\mlTest.Test.View\mlTest.Test.View.csproj", "{D15A5AB1-6901-48BD-8BE3-0417B2B89D1D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mlTest.Test.TaxiFarePrediction", "03.Test\mlTest.Test.TaxiFarePrediction\mlTest.Test.TaxiFarePrediction\mlTest.Test.TaxiFarePrediction.csproj", "{BA4E5477-406D-4483-92B0-857C8CDDC798}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{D15A5AB1-6901-48BD-8BE3-0417B2B89D1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D15A5AB1-6901-48BD-8BE3-0417B2B89D1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D15A5AB1-6901-48BD-8BE3-0417B2B89D1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA4E5477-406D-4483-92B0-857C8CDDC798}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA4E5477-406D-4483-92B0-857C8CDDC798}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA4E5477-406D-4483-92B0-857C8CDDC798}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA4E5477-406D-4483-92B0-857C8CDDC798}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +56,7 @@ Global
 		{062DE586-EE78-4616-93C8-E9BF8B04F9E1} = {9125BC53-5F5C-446A-B972-39B9154B972D}
 		{414BE28B-6CE7-4CF0-BD61-D2CE8BB7D110} = {9125BC53-5F5C-446A-B972-39B9154B972D}
 		{D15A5AB1-6901-48BD-8BE3-0417B2B89D1D} = {2E93C6D9-BBBA-4EB1-8D0D-11826314041A}
+		{BA4E5477-406D-4483-92B0-857C8CDDC798} = {2E93C6D9-BBBA-4EB1-8D0D-11826314041A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A422B3F5-0FCA-4E83-BD5E-BD8B9EE8824C}
