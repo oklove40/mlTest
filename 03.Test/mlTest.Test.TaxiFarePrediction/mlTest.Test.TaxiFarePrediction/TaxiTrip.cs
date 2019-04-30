@@ -8,22 +8,22 @@ namespace mlTest.Test.TaxiFarePrediction
     public class TaxiTrip
     {
         /*
-         vendor_id,rate_code,passenger_count,trip_time_in_secs,trip_distance,payment_type,fare_amount
-             */
+         * vendor_id,rate_code,passenger_count,trip_time_in_secs,trip_distance,payment_type,fare_amount
+        */
         [LoadColumn(0)]
         public string VendorId;
         [LoadColumn(1)]
         public string RateCode;
         [LoadColumn(2)]
-        public string PassengerCount;
+        public float PassengerCount;
         [LoadColumn(3)]
-        public string Triptime;
+        public float Triptime;
         [LoadColumn(4)]
-        public string TripDistance;
+        public float TripDistance;
         [LoadColumn(5)]
         public string PaymentType;
         [LoadColumn(6)]
-        public string FareAmount;
+        public float FareAmount;
     }
 
     public class TaxiTripFarePrediction
