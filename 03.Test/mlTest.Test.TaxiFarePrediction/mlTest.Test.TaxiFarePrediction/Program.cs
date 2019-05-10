@@ -59,7 +59,9 @@ namespace mlTest.Test.TaxiFarePrediction
                                                 //  작업할 데이타 최종정리
                                                 .Append
                                                 (
-                                                    mLContext.Transforms.Concatenate("Features"
+                                                    mLContext.Transforms.Concatenate
+                                                    (
+                                                        "Features"
                                                         , "VendorIdEncoded"
                                                         , "RateCodeEncoded"
                                                         , "PassengerCount"
